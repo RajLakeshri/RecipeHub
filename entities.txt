@@ -1,0 +1,57 @@
+User:
+
+Attributes:
+userId (Primary Key)
+username
+email
+password (hashed)
+profilePicture
+bio
+Relationships:
+One-to-many with Recipe (user can have multiple recipes)
+Recipe:
+
+Attributes:
+recipeId (Primary Key)
+title
+description
+ingredients (List)
+instructions
+cookingTime
+difficultyLevel
+imageUrl
+creationDate
+Relationships:
+Many-to-one with User (many recipes can belong to one user)
+Many-to-many with Tag (a recipe can have multiple tags, and a tag can be associated with multiple recipes)
+Tag:
+
+Attributes:
+tagId (Primary Key)
+name
+Relationships:
+Many-to-many with Recipe (a tag can be associated with multiple recipes, and a recipe can have multiple tags)
+Comment:
+
+Attributes:
+commentId (Primary Key)
+content
+creationDate
+Relationships:
+Many-to-one with User (user who posted the comment)
+Many-to-one with Recipe (recipe on which the comment is posted)
+Rating:
+
+Attributes:
+ratingId (Primary Key)
+value (1 to 5)
+Relationships:
+Many-to-one with User (user who rated the recipe)
+Many-to-one with Recipe (recipe that is rated)
+Follower:
+
+Attributes:
+followerId (Primary Key)
+Relationships:
+Many-to-one with User (user who is following)
+Many-to-one with User (user who is being followed)

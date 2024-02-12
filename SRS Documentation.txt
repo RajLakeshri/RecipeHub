@@ -1,0 +1,64 @@
+1. Introduction
+The Recipe Sharing Platform, referred to as "RecipeHub," is a web application designed to allow users to share, discover, and explore various recipes. This document outlines the functional and non-functional requirements for RecipeHub.
+
+2. Scope
+RecipeHub will provide users with the following features:
+
+User registration and authentication
+Recipe creation, editing, and deletion
+Recipe browsing and search functionality
+User profile management
+Interaction and engagement features, including rating and commenting
+Social features such as following other users
+Admin panel for moderation and analytics
+3. Functional Requirements
+
+3.1 User Management
+
+FR-1: Users should be able to register for an account by providing a valid email address and password.
+FR-2: Users should be able to log in to their account using their credentials.
+FR-3: Users should be able to update their profile information, including username, email, and profile picture.
+FR-4: Users should be able to reset their password if forgotten.
+3.2 Recipe Management
+
+FR-5: Registered users should be able to create a new recipe by providing details such as title, ingredients, instructions, cooking time, difficulty level, and tags/categories.
+FR-6: Users should be able to edit and update their own recipes.
+FR-7: Users should be able to delete their own recipes.
+FR-8: Recipes should have a title, description, list of ingredients, preparation instructions, and optional image upload.
+3.3 Recipe Discovery
+
+FR-9: Users should be able to browse recipes by categories/tags, such as cuisine type, dietary restrictions, and meal type.
+FR-10: Users should be able to search for recipes by keywords, ingredients, or user names.
+3.4 Interaction and Engagement
+
+FR-11: Users should be able to rate recipes on a scale of 1 to 5 stars.
+FR-12: Users should be able to leave comments on recipes.
+FR-13: Users should be able to bookmark or favorite recipes for quick access.
+3.5 Social Features
+
+FR-14: Users should be able to follow other users to stay updated on their latest recipes and activities.
+FR-15: Users should have a news feed displaying updates from followed users and trending recipes.
+3.6 Admin Panel
+
+FR-16: Admins should have access to a panel for managing user accounts, moderating content, and viewing analytics.
+FR-17: Admins should be able to delete inappropriate recipes or comments.
+4. Non-Functional Requirements
+
+4.1 Performance
+
+NFR-1: The system should be able to handle a large number of concurrent users without significant performance degradation.
+NFR-2: The response time for loading recipes and interacting with the platform should be minimal.
+4.2 Security
+
+NFR-3: User passwords should be securely hashed and stored in the database.
+NFR-4: All communication between the client and server should be encrypted using HTTPS.
+NFR-5: Only authenticated users should have access to certain features, such as recipe creation and commenting.
+4.3 Usability
+
+NFR-6: The user interface should be intuitive and easy to navigate.
+NFR-7: The platform should be responsive and accessible on various devices, including desktops, tablets, and smartphones.
+5. Glossary
+
+RecipeHub: The Recipe Sharing Platform.
+User: A registered user of RecipeHub.
+Admin: An administrator with elevated privileges to manage the platform.
